@@ -51,6 +51,7 @@ define samba::idmap(
     $ldap_url       = undef,
     $ldap_passwd    = undef,
     $script         = undef,
+    $unix_nss_info  = undef,
 ) {
 
   unless $idrangemin >= 0
