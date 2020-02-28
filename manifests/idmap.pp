@@ -100,7 +100,7 @@ define samba::idmap(
         fail("missing parameter(s) for idmap_${backend}, need: schema_mode")
       }
       $idmap_specific = {
-        "${cp} schemaA_mode" => $schema_mode,
+        "${cp} schema_mode" => $schema_mode,
         "${cp} unix_nss_info" => $unix_nss_info, 
       }
     }
